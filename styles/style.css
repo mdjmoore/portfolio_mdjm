@@ -444,11 +444,16 @@ footer {
     clear: both;
     margin-right: 195px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 470px) {
   header h1 {
-    left: 16%; }
+    left: 10%;
+    top: 30%; }
   header h2 {
-    top: 50%;
+    top: 60%;
+    left: 30%; } }
+
+@media (max-width: 320px) {
+  header h2 {
     left: 20%;
     text-align: right; }
   .logo {
