@@ -433,6 +433,8 @@ footer {
     left: 20%; } }
 
 @media (max-width: 500px) {
+  header {
+    background-attachment: scroll; }
   .logo {
     margin-left: 25%; }
   .menu {

@@ -339,9 +339,6 @@ footer {
 @media (max-width:960px) {
     .project {
         flex-direction: column;
-        // .project-words {
-        //     max-width: 70%;
-        // }
         .project-pic {
             margin:0 auto;
         }
@@ -398,7 +395,9 @@ footer {
     }
 }
 @media (max-width:500px) {
-
+    header {
+        background-attachment: scroll;
+    }
     .logo {
         margin-left:25%;
     }
