@@ -393,11 +393,26 @@ footer {
 }
 
 @media (max-width:645px) {
+    .wrapper {
+        width:70%;
+    }
     header h2 {
         font-size: 3rem;
     }
     header h1 {
         font-size: 6rem;
+    }
+
+    #contact .wrapper h2:first-of-type {
+       display: none; 
+    }
+
+    #contact .wrapper .emailMe {
+        float:none;
+    }
+
+    #contact .wrapper #submit {
+        margin-left:40%;
     }
 }
 
