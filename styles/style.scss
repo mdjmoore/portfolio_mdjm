@@ -25,7 +25,7 @@ h2 {
 }
 
 header {
-    background: linear-gradient(rgba(37, 37, 37, 0.7), rgba(37, 37, 37,0.7)), url(../assets/Skates_NeilGunner2017_0571.jpg);
+    background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0,0.3)), url(../assets/Skates_NeilGunner2017_0571.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -45,7 +45,7 @@ header {
     h1 {
         font-size: 7rem;
         font-family: $sans;
-        font-weight: 300;
+        font-weight: 400;
         position: absolute;
         top:45%;
         left:52%;
@@ -158,9 +158,21 @@ img {
 .about-image-container {
     width:40%;
     align-self: center;
+    position: relative;
     img {
         max-width: 100%;
     }
+    &:hover .derby {
+        opacity: 1;
+    }
+}
+
+.about-image-container .derby {
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: all 0.2s ease;
 }
 
 #works {
@@ -174,7 +186,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom:50px;
+    margin-bottom:100px;
     text-align: right;
     a {
         font-size: 1.75rem;
@@ -283,7 +295,7 @@ img {
             margin-top:10px;
             margin-left:49%;
             margin-right:49%;
-            font-size: 1.8rem;
+            font-size: 3rem;
             transition: all 0.2s ease;
             &:hover {
                 color:$blue;
