@@ -1,0 +1,437 @@
+@import "setup";
+// @import "mediaqueries";
+
+$serif: 'Lora', serif;
+$sans: 'Source Sans Pro', sans-serif;
+$blue: #51C7C6;
+$white: #F8F8F8;
+$yellow: #F09A3D;
+$orange: #EB6B38;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $sans;
+    background: $white;
+}
+
+h2 {
+    color:$orange;
+    font-size: 3.5rem;
+    border-top:1px solid $blue;
+    padding:7px 0px;
+}
+
+header {
+    background: linear-gradient(rgba(37, 37, 37, 0.7), rgba(37, 37, 37,0.7)), url(../assets/Skates_NeilGunner2017_0571.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+    position: relative;
+    margin-bottom:100px;
+    h2 {
+        font-family: $serif;
+        font-weight: 400;
+        font-size: 4.5rem;
+        position: absolute;
+        top:55%;
+        left:45%;
+        color:$orange;
+        border:none;
+    }
+    h1 {
+        font-size: 7rem;
+        font-family: $sans;
+        font-weight: 300;
+        position: absolute;
+        top:45%;
+        left:52%;
+        color: $blue;
+        padding:10px;
+        text-shadow: .04em .04em 0 $yellow,
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color:$blue;
+    transition: all 0.2s ease;
+    &:hover {
+        color:$orange;
+        border-bottom:1px solid $orange;
+        border-top:1px solid $orange;
+        padding:7px 0px;
+    }
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.logo {
+    margin:-50px 10px;
+    width:300px;
+}
+
+.copyright {
+    position: absolute;
+    bottom:40px;
+    left:70px;
+    color:$blue;
+    font-size: 1.2rem;
+}
+
+.menu {
+    position: absolute;
+    top:50px;
+    right:85px;
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        li {
+            margin:10px;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.social {
+    position: fixed;
+    bottom:40px;
+    right:6%;
+    font-size: 2rem;
+    @media (max-width:1300px) {
+        right:5%;
+    }
+    @media (max-width:1200px) {
+        right:3%;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        li {
+            margin:10px;
+            a:hover {
+                border:none;
+            }
+        }
+    }
+}
+
+img {
+    max-width: 200px;
+}
+
+.wrapper {
+    max-width:970px;
+    width:80%;
+    margin:0 auto;
+}
+
+#about {
+   .wrapper {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+   } 
+}
+
+.about-words {
+    width:50%;
+    text-align: right;
+    h2 {
+        width:100%;
+    }
+    p {
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height:30px;
+    }
+}
+
+.about-image-container {
+    width:40%;
+    align-self: center;
+    img {
+        max-width: 100%;
+    }
+}
+
+#works {
+    margin:0 auto;
+    h2 {
+        width:50%;
+    }
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:50px;
+    text-align: right;
+    a {
+        font-size: 1.75rem;
+    }
+    a:first-of-type {
+        margin-right:20px;
+    }
+    p {
+        margin-top:20px;
+        margin-bottom:20px;
+        font-size: 1.6rem;
+    }
+    h4 {
+        margin-top:20px;
+        color:$yellow;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    h3 {
+        margin-top:30px;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    .project-pic {
+        max-width: 524px;
+    }
+    img {
+        max-width: 100%;
+    }
+
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    text-align: left;
+}
+
+#skills {
+    .wrapper {
+        display:flex;
+        flex-direction: row;
+        .skill-icons {
+            padding:50px 0;
+            margin-left:50px;
+            width:50%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            .skill-column {
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 6rem;
+                .icon {
+                    margin-bottom:20px;
+                    &:hover {
+                        color:$yellow;
+                    }
+                }
+            }
+        }
+        h2 {
+            width:50%;
+            text-align: right;
+        }
+    }
+}
+
+#contact {
+    .wrapper {
+        h2 {
+            width:calc(50% - 20px);
+            float:left;
+            margin-bottom: 80px;
+        }
+        .emailMe {
+            float:right;
+            text-align: right;
+        }
+        #name, #email, #message {
+            border:none;
+            border-bottom:1px solid $yellow;
+            background: $white;
+            font-size: 1.6rem;
+        }
+        #name, #email {
+            width:calc(50% - 20px);
+            float:left;
+            margin-bottom:50px;
+        }
+        #name {
+            margin-right:40px;
+        }
+        #message {
+            width:100%;
+            height:150px;
+            resize:none;
+            margin-bottom:50px;
+        }
+        #submit {
+            color:$yellow;
+            border:none;
+            background:$white;
+            margin-top:10px;
+            margin-left:49%;
+            margin-right:49%;
+            font-size: 1.8rem;
+            transition: all 0.2s ease;
+            &:hover {
+                color:$blue;
+                cursor: pointer;
+                transform: scale(2);
+            }
+            &:active {
+                animation: fly 2s cubic-bezier(1,.02,.8,.33) 1;
+                animation-fill-mode: forward;
+            }
+        }
+    }
+}
+
+@keyframes fly {
+        1% {
+            transform: translate(0px, 0px) rotate(20deg);
+        }
+
+        100% {
+            transform:translate(2000px, -1000px);
+        }
+    }   
+        
+label {
+    display: none;
+}
+
+h2 {
+    width:50%;
+    margin-bottom: 50px;
+}
+
+footer {
+    text-align: center;
+    padding:20px;
+    font-size: 1.6rem;
+    line-height: 30px;
+}
+
+@media (max-width:1200px) {
+    header h2 {
+        top:60%;
+    }
+}
+
+@media (max-width:908px) {
+    header h1 {
+        left:30%;
+    }
+}
+
+@media (max-width:960px) {
+    .project {
+        flex-direction: column;
+        // .project-words {
+        //     max-width: 70%;
+        // }
+        .project-pic {
+            margin:0 auto;
+        }
+    }
+}
+
+@media (max-width:664px) {
+    header{
+        h2 {
+            top:35%;
+            left:10%;
+        }
+        h1 {
+        top:20%;
+        left:30%;
+    }
+
+} 
+    .about-image-container img {
+        display:none;
+    }
+
+    .about-words {
+        min-width:90%;
+        p {
+            text-align: left;
+        }
+        h2 {
+            width:50%;
+        }
+    }
+    #skills .wrapper {
+        flex-direction: column;
+        margin:0 auto;
+        .skill-icons {
+            width:100%;
+            margin-left:0;
+        }
+    }
+}
+
+@media (max-width:645px) {
+    header h2 {
+        font-size: 3rem;
+    }
+    header h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width:540px) {
+    header h1 {
+        left:20%;
+    }
+}
+@media (max-width:500px) {
+
+    .logo {
+        margin-left:25%;
+    }
+
+    .menu {
+        top:90px;
+        left:25%;
+    }
+}
+
+@media (max-width:440px) {
+    .emailMe {
+        clear: both;
+        margin-right:195px;
+    }
+}
+
+@media (max-width:320px) {
+    header h1 {
+        left:16%;
+    }
+    header h2 {
+        top:50%;
+        left:20%;
+        text-align: right;
+    }
+    .logo {
+        margin-left:10%;
+    }
+    .menu {
+        left:10%;
+    }
+    .emailMe {
+        margin-right:145px;
+    }
+}
