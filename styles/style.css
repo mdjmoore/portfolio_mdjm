@@ -417,8 +417,11 @@ footer {
   header h1 {
     top: 20%;
     left: 30%; }
-  .about-image-container img {
-    display: none; }
+  #about .wrapper {
+    flex-direction: column-reverse; }
+    #about .wrapper .about-image-container {
+      width: 70%;
+      margin-bottom: 50px; }
   .about-words {
     min-width: 90%; }
     .about-words p {
