@@ -188,6 +188,9 @@ img {
     justify-content: space-between;
     margin-bottom:100px;
     text-align: right;
+    .project-words {
+        margin:10px;
+    }
     a {
         font-size: 1.75rem;
     }
@@ -212,6 +215,10 @@ img {
     }
     .project-pic {
         max-width: 524px;
+        color:$orange;
+        border-bottom:1px solid $orange;
+        border-top:1px solid $orange;
+        padding:15px;
     }
     img {
         max-width: 100%;

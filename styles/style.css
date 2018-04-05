@@ -280,6 +280,8 @@ img {
   justify-content: space-between;
   margin-bottom: 100px;
   text-align: right; }
+  .project .project-words {
+    margin: 10px; }
   .project a {
     font-size: 1.75rem; }
   .project a:first-of-type {
@@ -298,7 +300,11 @@ img {
     font-weight: 700;
     font-size: 3rem; }
   .project .project-pic {
-    max-width: 524px; }
+    max-width: 524px;
+    color: #EB6B38;
+    border-bottom: 1px solid #EB6B38;
+    border-top: 1px solid #EB6B38;
+    padding: 15px; }
   .project img {
     max-width: 100%; }
 
