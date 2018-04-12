@@ -396,6 +396,9 @@ h2 {
   margin-bottom: 50px; }
 
 footer {
+  background: url(../assets/orangeVector.jpg);
+  background-size: cover;
+  background-position: right;
   text-align: center;
   padding: 20px;
   font-size: 1.6rem;
